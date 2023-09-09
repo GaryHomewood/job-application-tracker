@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applications",
+  "info": {
+    "singularName": "job-application",
+    "pluralName": "job-applications",
+    "displayName": "JobApplication",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "applicationDate": {
+      "type": "date",
+      "required": true
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "agency": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Applied",
+        "Interviewing",
+        "Interviewed",
+        "Rejected"
+      ],
+      "default": "Applied"
+    },
+    "jobUrl": {
+      "type": "string"
+    },
+    "companyUrl": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "richtext"
+    }
+  }
+}
